@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Conways Game of Life</title>
+	<title>Adam Armendariz</title>
 
 	<script src="libraries/p5.js"></script>
 	<script src="libraries/p5.dom.js"></script>
@@ -14,19 +14,127 @@
 	<script src="sketch.js"></script>
 
 	<style>
-		body {
+		* {
+			box-sizing: border-box;
+		}
+
+		body,
+		html {
 			margin: 0;
 			padding: 0;
+			height: 100%;
+			font-family: Lato, sans-serif;
 			overflow: hidden;
 		}
 
 		canvas {
-			margin: auto;
+			margin: 0;
+		}
+
+		.tablink {
+			background-color: #707373;
+			color: white;
+			float: Left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			font-size: 17px;
+			width: 20%;
+			resize: horizontal;
+		}
+
+		.tablink:hover {
+			background-color: #998542;
+		}
+
+		.tabcontent {
+			color: black;
+			display: none;
+			padding: 50px 20px;
+			height: 100%;
 		}
 	</style>
 </head>
 
-<body>
+<body bgcolor=#D6D3C4>
+	<!--Logo/Banner-->
+	<header>
+		<img src="images/logo.png" alt="Adam logo" class="logo" hspace="4px" height="150" width="220">
+	</header>
+
+	<!--Create Buttons-->
+	<button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+	<button class="tablink" onclick="openPage('Professional', this)">Professional</button>
+	<button class="tablink" onclick="openPage('Portfolio', this)">Portfolio</button>
+	<button class="tablink" onclick="openPage('Service', this)">Service</button>
+	<button class="tablink" onclick="openPage('About', this)">About Me</button>
+
+	<!--Create Tab Content-->
+	<div id="Home" class="tabcontent">
+		<h2>Home</h2>
+		<p>This is example text for the header</p>
+		<p>I hope it looks okay</p>
+	</div>
+	<div id="Professional" class="tabcontent">
+		<h2>Professional</h2>
+		<p>This is example text for the professional</p>
+		<p>I hope it looks okay</p>
+	</div>
+	<div id="Portfolio" class="tabcontent">
+		<h2>Portfolio</h2>
+		<p>This is example text for the portfolio</p>
+		<p>I hope it looks okay</p>
+	</div>
+	<div id="Service" class="tabcontent">
+		<h2>Service</h2>
+		<p>This is example text for the service</p>
+		<p>I hope it looks okay</p>
+	</div>
+	<div id="About" class="tabcontent">
+		<h2>About</h2>
+		<p>This is example text for the about</p>
+		<p>I hope it looks okay</p>
+	</div>
+
+
+	<!--Tab Content Logic-->
+	<script type="text/javascript">
+		function openPage(pageName, element) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+
+			document.getElementById(pageName).style.display = "block";
+			element.style.backgroundColor = '#332C2C';
+		}
+
+		document.getElementById("defaultOpen").click();
+	</script>
+
+	<!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="center">
+				<h3>
+					<font color="#990000">HOWDY!!</font>
+				</h3>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<font color="#990000"><br><br>I have no idea what I am doing</font>
+			</td>
+		</tr>
+	</table>
+	-->
 </body>
 
 </html>
