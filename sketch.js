@@ -4,20 +4,37 @@ let cols;
 let time;
 
 let grid = [];
-let size = 30;
+let size = 20;
+
+let canvas;
+let width;
+let height;
+
+let transX = 280;
+let transY = 188;
 
 function setup() {
-    rows = floor(windowHeight / size);
-    cols = floor(windowWidth / size);
-    createCanvas(windowWidth, windowHeight);
+    //noStroke()
+    width = windowWidth;
+    height = transY;
+    rows = floor(height / size);
+    cols = floor(width / size);
+    canvas = createCanvas(width, height);
+    canvas.position(0, 0);
+    canvas.style('z-index', '-1');
     grid = createGrid();
     frameRate(10);
 }
 
 function draw() {
-    background(0);
+    fill(80, 0, 0)
+    rect(0, 0, windowWidth, transY)
     drawGrid();
     grid = updateGrid();
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, height);
 }
 
 function createGrid() {
@@ -31,13 +48,15 @@ function createGrid() {
 }
 
 function drawGrid() {
+    noStroke();
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             if (grid[i][j])
-                fill(80, 0, 0);
-            else
                 fill(255);
-            rect(windowWidth / 2 + j * size - cols / 2 * size, windowHeight / 2 + i * size - rows / 2 * size, size, size);
+            else
+                noFill();
+            rect(j * size + transX, i * size, size, size)
+            //rect(width / 2 + j * size - cols / 2 * size, height / 2 + i * size - rows / 2 * size, size, size);
         }
     }
 }
@@ -71,8 +90,8 @@ function updateCell(i, j) {
 }
 
 function mouseMoved() {
-    let xpos = floor((mouseX - windowWidth / 2 + cols / 2 * size) / size);
-    let ypos = floor((mouseY - windowHeight / 2 + rows / 2 * size) / size);
+    let xpos = floor(((mouseX - transX) - width / 2 + cols / 2 * size) / size);
+    let ypos = floor((mouseY - height / 2 + rows / 2 * size) / size);
     if ((0 <= xpos && xpos < cols) && (0 <= ypos && ypos < rows)) {
         grid[ypos][xpos] = true;
     }
