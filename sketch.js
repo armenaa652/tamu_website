@@ -29,6 +29,7 @@ let transY = 152;
 let first = true;
 let resize = false;
 let time;
+
 function setup() {
     //noStroke()
     width = windowWidth - transX;
