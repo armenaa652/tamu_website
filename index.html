@@ -12,7 +12,7 @@
 	<script src="libraries/p5.dom.js"></script>
 	<script src="libraries/p5.sound.js"></script>
 	<script src="sketch.js"></script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -23,7 +23,7 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			font-family: Lato, sans-serif;
+			font-family: "Times New Roman", serif;
 			overflow: visible;
 		}
 
@@ -58,10 +58,59 @@
 			border-color: black;
 		}
 
-		#heading {
+		h1 {
+			margin-top: 0px;
+			font-size: 55px;
+		}
+
+		h4 {
+			margin-top: -35px;
+			font-size: 20px;
+		}
+
+		.fa {
+			margin-top: 15px;
+			margin-bottom: 15px;
+
+			box-sizing: unset;
+			padding: 15px;
+			font-size: 20px;
+			width: 20px;
 			text-align: center;
-			margin: 0;
-			font-family: 'Century Gothic', sans-serif;
+			text-decoration: none;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 50%;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+		}
+
+		.fa-linkedin {
+			background: #2867B2;
+			color: white;
+		}
+
+		.fa-google {
+			background: #DB4437;
+			color: white;
+		}
+
+		.fa-instagram {
+			background: #E1306C;
+			color: white;
+		}
+
+		hr {
+			margin-top: 50px;
+
+			width: 40%;
 		}
 	</style>
 </head>
@@ -80,36 +129,30 @@
 	<a class="tablink" href="aboutme.html">About</a>
 
 	<!--Create Tab Content-->
-	<div class="tabcontent" id="heading">
-
+	<div class="tabcontent">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
 			<tbody>
 				<td align="center">
-					<img src="images/adam.jpeg" id="adam" vspace="10px" width=70%>
-					<h1>
+					<img src="images/adam.jpeg" id="adam" vspace="10px" width="600px">
+					<h1 font-size:14px>
 						Adam Armendariz
 					</h1>
-					<h5>
-						THIS IS A TEST
-					</h5>
+					<h4>
+						Bachelor of Science in Computer Engineering<br />
+						Texas A&M University, College Station, TX<br />
+						Class of 2021
+					</h4>
+					<hr>
+					<a href="https://www.facebook.com/adam.armendariz.3" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://www.linkedin.com/in/adam-armendariz/" target="_blank" class="fa fa-linkedin"></a>
+					<a href="https://www.instagram.com/adam652/" target="_blank" class="fa fa-instagram"></a>
+					<a href="mailto:armenaa652@tamu.edu" class="fa fa-google"></a>
 				</td>
 			</tbody>
 		</table>
 	</div>
-	<div class="tabcontent">
-
-		<table width="100%" border="0" cellspacing="0" cellpadding="10">
-			<tbody>
-				<tr>
-					<td align="center">
 
 
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 </body>
 
 </html>
