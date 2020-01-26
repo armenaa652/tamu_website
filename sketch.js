@@ -24,7 +24,7 @@ let width;
 let height;
 
 let transX = 220;
-let transY = 152;
+let transY = transX * (152 / 220);
 
 let first = true;
 let resize = false;

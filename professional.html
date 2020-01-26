@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Lato, sans-serif;
+            font-family: "Times New Roman", serif;
             overflow: visible;
         }
 
@@ -43,6 +43,8 @@
             width: 20%;
             text-align: center;
             text-decoration: none;
+            font-family: "Lato", sans-serif;
+
         }
 
         .tablink:hover {
@@ -51,6 +53,13 @@
 
         #tabselected {
             background-color: #332C2C;
+        }
+
+        h1 {
+            margin-top: 3%;
+            font-size: 55px;
+            font-size: 7vw;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -69,10 +78,21 @@
     <a class="tablink" href="aboutme.html">About</a>
 
     <!--Create Tab Content-->
-    <div id="Professional" class="tabcontent">
-        <h2>Professional</h2>
-        <p>displaying technical information and resume. The resume is preferably in PDF format, but HTML is acceptable.
-            Word or easily editable documents are not recommended. The resume should only be part of this page.</p>
+    <div class="tabcontent">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <td align="center">
+                    <h1>Resume</h1>
+                    <embed src="images/adam_resume.pdf" type="application/pdf" width="80%" height="400px" />
+                    <p>
+                        displaying technical information and resume. The resume is preferably in PDF format, but HTML is
+                        acceptable.
+                        Word or easily editable documents are not recommended. The resume should only be part of this
+                        page.
+                    </p>
+                </td>
+            </tbody>
+        </table>
     </div>
 </body>
 
