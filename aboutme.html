@@ -12,6 +12,7 @@
     <script src="libraries/p5.dom.js"></script>
     <script src="libraries/p5.sound.js"></script>
     <script src="sketch.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
@@ -52,6 +53,56 @@
         #tabselected {
             background-color: #332C2C;
         }
+
+        .fa {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            box-sizing: unset;
+            padding: 16px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-github {
+            background: #6e5494;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #2867B2;
+            color: white;
+        }
+
+        .fa-google {
+            background: #DB4437;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #E1306C;
+            color: white;
+        }
+
+        hr {
+            margin-top: 50px;
+
+            width: 32.5%;
+        }
     </style>
 </head>
 
@@ -63,16 +114,27 @@
 
     <!--Create Buttons-->
     <a class="tablink" href="./">Home</a>
-    <a class="tablink" href="/professional.html">Professional</a>
-    <a class="tablink" href="/portfolio.html">Portfolio</a>
-    <a class="tablink" href="/service.html">Service</a>
-    <a class="tablink" href="/aboutme.html" id="tabselected">About</a>
+    <a class="tablink" href="professional.html">Professional</a>
+    <a class="tablink" href="portfolio.html">Portfolio</a>
+    <a class="tablink" href="service.html">Service</a>
+    <a class="tablink" href="aboutme.html" id="tabselected">About</a>
 
     <!--Create Tab Content-->
     <div id="About" class="tabcontent">
         <h2>About</h2>
         <p>displaying personal information you choose to share</p>
     </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <td align="center">
+                <hr>
+                <a href="https://www.facebook.com/adam.armendariz.3" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/adam-armendariz/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/armenaa652" target="_blank" class="fa fa-github"></a>
+                <a href="mailto:armenaa652@tamu.edu" class="fa fa-google"></a>
+            </td>
+        </tbody>
+    </table>
 </body>
 
 </html>

@@ -57,28 +57,38 @@
 			border-style: solid;
 			border-width: 10px;
 			border-color: black;
+			max-width: 80%;
+			height: auto;
 		}
 
 		h1 {
-			margin-top: 0px;
-			font-size: 55px;
-			font-size: 7vw
+			/*margin-top: 0px;
+			font-size: 65px;
+			font-size: 4vmax;*/
+			min-width: 500px;
+			max-width: 1200px;
+			margin: 0 auto;
+			font-size: 65px;
+
 		}
 
 		h4 {
-			margin-top: -5%;
-			font-size: 20px;
-			font-size: 2.4vw;
+			/*margin-top: -30px;
+			font-size: 25px;
+			font-size: 1.5vmax;*/
+			min-width: 500px;
+			max-width: 1200px;
+			margin: 0 auto;
+			font-size: 25px;
 		}
 
 		.fa {
 			margin-top: 15px;
 			margin-bottom: 15px;
-
 			box-sizing: unset;
-			padding: 1.2%;
-			font-size: 2vw;
-			width: 1.8%;
+			padding: 16px;
+			font-size: 20px;
+			width: 20px;
 			text-align: center;
 			text-decoration: none;
 			margin-left: auto;
@@ -92,6 +102,11 @@
 
 		.fa-facebook {
 			background: #3B5998;
+			color: white;
+		}
+
+		.fa-github {
+			background: #6e5494;
 			color: white;
 		}
 
@@ -115,10 +130,24 @@
 
 			width: 32.5%;
 		}
+
+		#bkgnd {
+			position: absolute;
+			left: 0px;
+			top: -25px;
+			opacity: .8;
+			filter: blur(8px);
+			z-index: -1;
+			width: 100%;
+			/*height: 106%;*/
+			min-height: 920px;
+			max-height: 920px;
+
+		}
 	</style>
 </head>
 
-<body bgcolor=#D6D3C4>
+<body bgcolor=#D6D3C>
 	<!--Logo/Banner-->
 	<header>
 		<img src="images/logo.png" alt="Adam logo" class="logo" hspace="4px" width="220">
@@ -131,12 +160,15 @@
 	<a class="tablink" href="service.html">Service</a>
 	<a class="tablink" href="aboutme.html">About</a>
 
+	<!--<img src="images/kyle.jpeg" id="bkgnd">-->
+	<img src="images/kyle.jpeg" id="bkgnd">
 	<!--Create Tab Content-->
-	<div class="tabcontent">
+	<div class=" tabcontent">
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 			<tbody>
 				<td align="center">
-					<img src="images/adam.jpeg" id="adam" vspace="10px" width=70%>
+					<img src="images/adam.jpeg" id="adam" vspace="10px" width="700px">
 					<h1 font-size:14px>
 						Adam Armendariz
 					</h1>
@@ -148,7 +180,7 @@
 					<hr>
 					<a href="https://www.facebook.com/adam.armendariz.3" target="_blank" class="fa fa-facebook"></a>
 					<a href="https://www.linkedin.com/in/adam-armendariz/" target="_blank" class="fa fa-linkedin"></a>
-					<a href="https://www.instagram.com/adam652/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://github.com/armenaa652" target="_blank" class="fa fa-github"></a>
 					<a href="mailto:armenaa652@tamu.edu" class="fa fa-google"></a>
 				</td>
 			</tbody>

@@ -12,6 +12,7 @@
     <script src="libraries/p5.dom.js"></script>
     <script src="libraries/p5.sound.js"></script>
     <script src="sketch.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
@@ -55,16 +56,91 @@
             background-color: #332C2C;
         }
 
+        #resume {
+            max-width: 80%
+        }
+
         h1 {
-            margin-top: 2%;
-            font-size: 7vw;
+            margin-top: 60px;
+            font-size: 75px;
             text-decoration: underline;
+            margin-left: 10%;
+
+            /*min-width: 500px;
+            max-width: 900px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0 auto;*/
         }
 
         p {
-            margin-left: 10%;
-            margin-right: 10%;
-            font-size: 3vw;
+            /* margin-left: 15%;
+            margin-right: 15%;
+            font-size: 30px;*/
+            /*font-family: Helvetica, arial, sans-serif;*/
+            min-width: 500px;
+            max-width: 1000px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 18px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            padding-top: 20px;
+            font-size: 30px;
+            text-decoration: solid;
+        }
+
+        .fa {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            box-sizing: unset;
+            padding: 16px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-github {
+            background: #6e5494;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #2867B2;
+            color: white;
+        }
+
+        .fa-google {
+            background: #DB4437;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #E1306C;
+            color: white;
+        }
+
+        hr {
+            margin-top: 50px;
+
+            width: 32.5%;
         }
     </style>
 </head>
@@ -87,14 +163,42 @@
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
                 <td align="center">
-                    <h1>Resume</h1>
-                    <embed src="images/adam_resume.pdf" type="application/pdf" width="80%" height="400px" />
+                    <h2>
+                        Resume
+                    </h2>
+                    <embed src="images/adam_resume.pdf" id="resume" type="application/pdf" width="800px"
+                        height="1035px" />
+                    <h2>
+                        My Contribution
+                    </h2>
                     <p>
-                        displaying technical information and resume. The resume is preferably in PDF format, but HTML is
-                        acceptable.
-                        Word or easily editable documents are not recommended. The resume should only be part of this
-                        page.
+                        My name is Adam Armendariz and I am a Computer Engineering major in my Junior year at Texas A&M.
+                        All of my life I have strived to get more involved into computer science. Coming from a small
+                        town with very limited learning options, I had no choice but to teach myself the fundamentals of
+                        programming. I progressed from small computational programs, to learning different libraries
+                        like pygame and p5.js to make my own games. Certain aspects of what I learned may seem trivial,
+                        but played a pivotal role in my ability to think algorithmically. Coming into my freshman year
+                        at A&M I joined a research team called SpaceCRAFT, which had the goal of creating VR software
+                        that could be used by researchers to commit tests in different physics environments other than
+                        Earth’s. I was brought on to the team as a software developer for the planetary scaling team.
+                        The sub-team was in charge of the procedural generation of planets that we did not have data
+                        for. My contribution to the team mainly consisted of analysis of the generated data for lighting
+                        and UV mapping purposes. During my time with SpaceCRAFT I learned how truly exciting and
+                        rewarding creating software like that can be. Having such an open-ended problem allowed for the
+                        entire team’s creativity to flourish. Aside from that, over the summer I worked for an
+                        engineering camp at my local college. In this camp, I teach middle school and high school
+                        students the fundamentals of engineering, problem solving and programming. It is such a
+                        rewarding feeling to give the students opportunities that I did not have growing up. The thing I
+                        am most excited about however is coming this upcoming summer. I have been accepted at an
+                        internship with a company called CACI. With them I will be conducting contract work at NASA to
+                        take part in its GATEWAY project, which will be the “gateway” to eventually traveling to mars.
                     </p>
+
+                    <hr>
+                    <a href="https://www.facebook.com/adam.armendariz.3" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/in/adam-armendariz/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/armenaa652" target="_blank" class="fa fa-github"></a>
+                    <a href="mailto:armenaa652@tamu.edu" class="fa fa-google"></a>
                 </td>
             </tbody>
         </table>
