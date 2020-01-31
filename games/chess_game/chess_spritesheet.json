@@ -1,0 +1,125 @@
+{ "frames": [
+   {
+    "filename": "chess_spritesheet 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 1.aseprite",
+    "frame": { "x": 70, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 2.aseprite",
+    "frame": { "x": 140, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 3.aseprite",
+    "frame": { "x": 210, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 4.aseprite",
+    "frame": { "x": 280, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 5.aseprite",
+    "frame": { "x": 350, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 6.aseprite",
+    "frame": { "x": 420, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 7.aseprite",
+    "frame": { "x": 490, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 8.aseprite",
+    "frame": { "x": 560, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 9.aseprite",
+    "frame": { "x": 630, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 10.aseprite",
+    "frame": { "x": 700, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   },
+   {
+    "filename": "chess_spritesheet 11.aseprite",
+    "frame": { "x": 770, "y": 0, "w": 70, "h": 70 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+    "sourceSize": { "w": 70, "h": 70 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9",
+  "format": "I8",
+  "size": { "w": 840, "h": 70 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
