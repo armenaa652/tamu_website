@@ -30,11 +30,13 @@ let first = true;
 let resize = false;
 let time;
 
+let offset = 16;
+
 function setup() {
     //noStroke()
     width = windowWidth - transX;
     height = transY;
-    canvas = createCanvas(width, height);
+    canvas = createCanvas(width - offset, height);
     canvas.position(transX, 0);
     canvas.style('z-index', '-1');
     grid = createGrid();
@@ -62,7 +64,7 @@ function draw() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, height);
+    resizeCanvas(windowWidth - transX - offset, height);
     resize = true;
     first = true;
 }

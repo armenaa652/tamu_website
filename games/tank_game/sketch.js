@@ -5,6 +5,7 @@ var powerSlider;
 var angelSlider;
 
 let tankNum = 2;
+let oldTankNum = tankNum;
 let tankTurn = 0;
 
 let powerMIN = 1;
@@ -137,17 +138,28 @@ function mousePressed() {
     if (tankNum)
         tanks[tankTurn].health -= 50;
 }
+
+function changeForward() {
+    if (tankNum == oldTankNum) {
+        tanks[tankTurn].power = power;
+        tankTurn = (tankTurn + 1) % tankNum;
+        powerSlider.value(tanks[tankTurn].power);
+        angleSlider.value(tanks[tankTurn].angle);
+        angle = angleSlider.value();
+        power = powerSlider.value();
+    } else {
+        oldTankNum = tankNum
+    }
+}
+
 function keyPressed() {
     if (tankNum) {
-        if (keyCode == 32)
+        if (keyCode == 32) {
             bullets.push(new bullet(powerSlider.value(), angleSlider.value(), tanks[tankTurn].xfinal, tanks[tankTurn].yfinal, tanks[tankTurn].color));
+            changeForward();
+        }
         if (keyCode == 221) {
-            tanks[tankTurn].power = power;
-            tankTurn = (tankTurn + 1) % tankNum;
-            powerSlider.value(tanks[tankTurn].power);
-            angleSlider.value(tanks[tankTurn].angle);
-            angle = angleSlider.value();
-            power = powerSlider.value();
+            changeForward(); d
         }
         if (keyCode == 219) {
             tanks[tankTurn].power = power;

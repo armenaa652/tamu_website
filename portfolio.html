@@ -53,15 +53,7 @@
             background-color: #332C2C;
         }
 
-        p {
-            min-width: 500px;
-            max-width: 1000px;
-            margin-left: 50px;
-            margin-right: 50px;
-            font-size: 18px;
-            padding-top: 0px;
-            padding-bottom: 20px;
-        }
+
 
         h2 {
             display: table;
@@ -87,17 +79,7 @@
             border-radius: 50%;
         }
 
-        .images {
-            border-style: solid;
-            /*border-width: 10px;
-            border-color: black;*/
-            max-width: 80%;
-            height: auto;
-            width: 650px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+
 
         .fa:hover {
             opacity: 0.7;
@@ -139,9 +121,55 @@
             width: 32.5%;
         }
 
-        .game {
+
+        .images {
+            border-style: solid;
+            /*border-width: 10px;
+            border-color: black;*/
+            max-width: 80%;
+            height: auto;
+            width: 650px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .links {
+            background-color: #5B6236;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+            padding: 12px 100px;
+            margin: 0px;
+            font-size: 18px;
+            width: 325px;
+            text-align: center;
             text-decoration: none;
-            color: black;
+        }
+
+        #nogame {
+            width: 650px;
+        }
+
+        .links:hover {
+            background-color: #744F28;
+        }
+
+        #github {
+            background-color: #6e5494;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 600px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #github:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -162,31 +190,153 @@
     <!--Create Tab Content-->
 
     <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/armenaa652/conways_game_of_life" target="_blank">Conway's Game of Life</a>
-            - Code that was used on the header of this website</li>
-        <!--<img src="images/tank.png" class="images" vspace="10px">-->
-        <img src="images/tank.png" alt="Adam logo" class="logo" hspace="4px" width="220">
+    <div>
+        <h2>
+            <font size=5>Tank Game - </font>
+            <font size=3>WASD to maneuver, Spacebar to shoot</font>
 
-        <li><a href="https://github.com/armenaa652/tank_game" target="_blank">Tank Game</a>
-            - Multiplayer tank shooting game</li>
-        <img src="images/chess.png" alt="Adam logo" class="logo" hspace="4px" width="220">
+        </h2>
+        <img src="images/tank.png" class="images">
+        <center>
 
-        <li><a href="https://github.com/armenaa652/chess_game" target="_blank">Chess Game</a>
-            - Simple chess game</li>
-        <img src="images/checkers.png" alt="Adam logo" class="logo" hspace="4px" width="220">
+            <a href="https://github.com/armenaa652/tank_game" target="_blank" class="links">Github Link</a><a
+                href="games/tank_game/index.html" target="_blank" class="links">Play the Game</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <h2>
+            <font size=5>Checkers Game - </font>
+            <font size=3>2 Player checkers game</font>
 
-        <li><a href="https://github.com/armenaa652/checkers_game" target="_blank">Checkers Game</a>
-            - Checkers game with rules implemented</li>
-        <li><a href="https://github.com/armenaa652/flappy_bird" target="_blank">Flappy Bird</a>
-            - Flappy bird clone</li>
-        <li><a href="https://github.com/armenaa652/tic_tac_toe" target="_blank">Tic-Tac-Toe</a>
-            - Tic-Tac-Toe AI that can always win</li>
-        <li><a href="https://github.com/armenaa652/snake" target="_blank">Snake Game</a>
-            - Snake game clone</li>
+        </h2>
+        <img src="images/checkers.png" class="images">
+        <center>
 
-        <a href="games/tank_game/index.html" target="_blank" class="game">TEST</a>
+            <a href="https://github.com/armenaa652/checkers_game" target="_blank" class="links">Github Link</a><a
+                href="games/checkers_game/index.html" target="_blank" class="links">Play the Game</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <h2>
+            <font size=5>Chess Game - </font>
+            <font size=3>2 Player game were rules are shown but not enforced</font>
 
+        </h2>
+        <img src="images/chess.png" class="images">
+        <center>
+
+            <a href="https://github.com/armenaa652/chess_game" target="_blank" class="links">Github Link</a><a
+                href="games/chess_game/index.html" target="_blank" class="links">Play the Game</a>
+        </center>
+    </div>
+    <br><br>
+
+    <div>
+        <h2>
+            <font size=5>Conways Game of Life - </font>
+            <font size=3>a cellular automata simulation</font>
+
+        </h2>
+        <img src="images/conway.png" class="images">
+        <center>
+
+            <a href="https://github.com/armenaa652/conways_game_of_life" target="_blank" class="links">Github Link</a><a
+                href="games/conway_game/index.html" target="_blank" class="links">Play the Game</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <h2>
+            <font size=5>Snake Game - </font>
+            <font size=3>a single player snake python clone</font>
+
+        </h2>
+        <img src="images/snake.png" class="images">
+        <center>
+
+            <a href="https://github.com/armenaa652/snake" target="_blank" class="links" id="nogame">Github Link</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <h2>
+            <font size=5>Asteroids Game - </font>
+            <font size=3>a single player asteroids python clone</font>
+
+        </h2>
+        <img src="images/asteroids.png" class="images">
+        <center>
+
+            <a href="https://github.com/armenaa652/asteroids" target="_blank" class="links" id="nogame">Github Link</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <h2>
+            <font size=5>Tic-Tac-Toe AI - </font>
+            <font size=3>a single and multiplayer C++ game</font>
+
+        </h2>
+        <img src="images/tictactoe.png" class="images">
+        <center>
+
+            <a href="https://github.com/armenaa652/tic_tac_toe" target="_blank" class="links" id="nogame">Github
+                Link</a>
+        </center>
+    </div>
+    <br><br>
+    <div>
+        <center>
+            <h2>
+                <a href="https://github.com/armenaa652" target="_blank" id="github">Personal Github Link</a>
+            </h2>
+        </center>
+    </div>
+    <div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <td align="center">
+
+                    <hr>
+                    <a href="https://www.facebook.com/adam.armendariz.3" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/in/adam-armendariz/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/armenaa652" target="_blank" class="fa fa-github"></a>
+                    <a href="mailto:armenaa652@tamu.edu" class="fa fa-google"></a>
+                </td>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+<!--<ul>
+        <img src="images/tank.png" class="images" vspace="10px">-->
+
+
+
+<!--        <a href="https://github.com/armenaa652/conways_game_of_life" target="_blank">Conway's Game of Life</a>
+        - Code that was used on the header of this website
+
+            <a href="https://github.com/armenaa652/tank_game" target="_blank">Tank Game<a>
+                <img src="images/chess.png" alt="Adam logo" class="logo" hspace="4px" width="220">
+
+                <a href="https://github.com/armenaa652/chess_game" target="_blank">Chess Game</a>
+                - Simple chess game
+                <img src="images/checkers.png" alt="Adam logo" class="logo" hspace="4px" width="220">
+
+                <a href="https://github.com/armenaa652/checkers_game" target="_blank">Checkers Game</a>
+                - Checkers game with rules implemented
+                <a href="https://github.com/armenaa652/flappy_bird" target="_blank">Flappy Bird</a>
+                - Flappy bird clone
+                <a href="https://github.com/armenaa652/tic_tac_toe" target="_blank">Tic-Tac-Toe</a>
+                - Tic-Tac-Toe AI that can always
+                <a href="https://github.com/armenaa652/snake" target="_blank">Snake Game</a>
+                - Snake game clone
+
+                <a href="games/tank_game/index.html" target="_blank" class="game">TEST</a>
+        
     </ul>
     <h2>Relavent Coursework</h2>
     <ul>
@@ -214,6 +364,4 @@
             </tbody>
         </table>
     </div>
-</body>
-
-</html>
+-->

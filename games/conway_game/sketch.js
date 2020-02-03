@@ -4,7 +4,7 @@ let cols;
 let time;
 
 let grid = [];
-let size = 5;
+let size = 15;
 
 function setup() {
     rows = floor(windowHeight / size);
@@ -12,7 +12,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     grid = createGrid();
     frameRate(10);
-    strokeWeight(.1);
+    strokeWeight(0);
 }
 
 function draw() {
@@ -22,11 +22,12 @@ function draw() {
 }
 
 function createGrid() {
-    let arr = new Array(rows);
+    let arr = [];
     for (let i = 0; i < rows; i++) {
-        arr[i] = new Array(cols);
-        for (let j = 0; j < cols; j++)
+        arr[i] = [];
+        for (let j = 0; j < cols; j++) {
             arr[i][j] = !floor(random(2));
+        }
     }
     return arr;
 }
@@ -35,7 +36,7 @@ function drawGrid() {
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             if (grid[i][j])
-                fill(80, 0, 0);
+                fill(0);
             else
                 fill(255);
             rect(windowWidth / 2 + j * size - cols / 2 * size, windowHeight / 2 + i * size - rows / 2 * size, size, size);
