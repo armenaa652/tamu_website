@@ -24,7 +24,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Lato, sans-serif;
+            font-family: "Lato", sans-serif;
             overflow: visible;
         }
 
@@ -117,6 +117,21 @@
             display: table;
             margin: 0 auto;
         }
+
+        /* https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 
@@ -136,12 +151,30 @@
     <!--Create Tab Content-->
 
     <h2>Service Projects</h2>
-    <ul>
-        <li><a href="https://bigevent.tamu.edu" target="_blank">The Big Event</a>
-            - Student run service project that gives back to the people of college station</li>
-        <li><a href="https://www.the12thcan.org" target="_blank">The 12th Can</a>
-            - The 12th Can is a student-run food pantry that helps whoever needs it</li>
-    </ul>
+
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="images/big_event.jpg" alt="" class="" hspace="4px" width=99%>
+            <p><a href="https://bigevent.tamu.edu" target="_blank">The Big Event</a>
+                - I've participated in this volunteering event every year at my time here at A&M. I love the sentiment
+                that Aggies Help Aggies and the idea of paying good deeds forward.</p>
+        </div>
+        <div class="column">
+            <img src="images/food_bank.PNG" alt="" class="" hspace="4px" width=99%>
+            <p><a href="https://coastalbendfoodbank.org" target="_blank">Coastel Bend Food Bank</a>
+                - In my hometown I have donated a lot of my time at the Coastel Bend Food Bank, sorting and labeling
+                incoming donations.</p>
+        </div>
+        <div class="column">
+            <img src="images/ronald_house.PNG" alt="" class="" hspace="4px" width=99%>
+            <p><a href="https://rmhcofcc.org" target="_blank">Ronald McDonald House Charities of Corpus Christi</a>
+                - Prepared food for people waiting in childrens hospital so they could stay at their childs side.</p>
+        </div>
+    </div>
+
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tbody>
             <td align="center">

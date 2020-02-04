@@ -31,6 +31,7 @@ let resize = false;
 let time;
 
 let offset = 16;
+offset = 0;
 
 function setup() {
     //noStroke()
